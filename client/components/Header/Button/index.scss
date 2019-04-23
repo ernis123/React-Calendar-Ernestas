@@ -1,0 +1,30 @@
+@import "~assets/styles/variables";
+@import "~assets/styles/mixins";
+
+
+.header__elements{
+  &-button{
+    height: 100%;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    & .holder{
+      width: 4rem;
+      height: 4rem;
+      border-radius: .5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all $t-2 ease-in;
+      background: $paper;
+    }
+    &--left{
+      @include left;
+    }
+    &--right{
+      @include right;
+    }
+  }
+}

@@ -1,0 +1,5 @@
+export const MENU_OPEN = 'MENU_OPEN';
+export const MENU_CLOSE = 'MENU_CLOSE'
+
+export const MENU_ANIMATING_START = 'MENU_ANIMATING_START';
+export const MENU_ANIMATING_STOP = 'MENU_ANIMATING_STOP';

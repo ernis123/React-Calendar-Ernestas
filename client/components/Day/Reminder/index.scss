@@ -1,0 +1,56 @@
+@import "~assets/styles/variables";
+@import "~assets/styles/mixins";
+
+.reminder {
+  color: #fff;
+  position: relative;
+  font-size: 1.2rem;
+  padding: 0 1rem;
+  margin-bottom: 5px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__container{
+    border-radius: .3rem;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-actions{
+      width: 35%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &--button{
+        width: 2rem;
+        height: 2rem;
+        background: $paper;
+        margin-right: .5rem;
+        border-radius: .3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & .update{
+          @include update;
+        }
+        & .delete{
+          @include cancel;
+        }
+      }
+    }
+    &-body{
+      padding-left: 2rem;
+      width: 65%;
+      height: 100%;
+    }
+  }
+}
+
+
+
+strong {
+  display: block;
+}
